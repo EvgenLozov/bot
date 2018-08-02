@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Bot" />
+        <module name="savkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Bot" target="1.7" />
       <module name="SAMOKATOV_31_07_2018" target="1.5" />
       <module name="Samokatovbot" target="1.7" />
+      <module name="savkin" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

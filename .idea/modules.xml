@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Bot/Bot.iml" filepath="$PROJECT_DIR$/Bot/Bot.iml" />
       <module fileurl="file://$PROJECT_DIR$/SAMOKATOV_31_07_2018.iml" filepath="$PROJECT_DIR$/SAMOKATOV_31_07_2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/savkin/savkin.iml" filepath="$PROJECT_DIR$/savkin/savkin.iml" />
     </modules>
   </component>
 </project>

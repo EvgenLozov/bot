@@ -1,1 +1,1 @@
-web: java -jar Bot/target/samokatov.jar
+web: java -jar savkin/target/savkin-1.0-SNAPSHOT.jar
