@@ -11,7 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Bot" target="1.7" />
-      <module name="SAMOKATOV_31_07_2018" target="1.5" />
+      <module name="SAMOKATOV_31_07_2018" target="1.7" />
       <module name="Samokatovbot" target="1.7" />
       <module name="savkin" target="1.7" />
     </bytecodeTargetLevel>
