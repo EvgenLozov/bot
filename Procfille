@@ -1,1 +1,1 @@
-run java -jar savkin/target/savkin-1.0-SNAPSHOT-jar-with-dependencies.jar
+worker: java -jar savkin/target/savkin-1.0-SNAPSHOT-jar-with-dependencies.jar
