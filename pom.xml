@@ -41,24 +41,50 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-dependency-plugin</artifactId>-->
+                <!--<version>2.3</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals><goal>copy</goal></goals>-->
+                        <!--<configuration>-->
+                            <!--<artifactItems>-->
+                                <!--<artifactItem>-->
+                                    <!--<groupId>com.github.jsimone</groupId>-->
+                                    <!--<artifactId>webapp-runner</artifactId>-->
+                                    <!--<version>8.5.31.0</version>-->
+                                    <!--<destFileName>savkin/target/savkin-1.0-SNAPSHOT.jar</destFileName>-->
+                                <!--</artifactItem>-->
+                            <!--</artifactItems>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.3</version>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <packageName>ru.savkin</packageName>
+                            <mainClass>ru.savkin.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
                 <executions>
                     <execution>
+                        <id>assemble-all</id>
                         <phase>package</phase>
-                        <goals><goal>copy</goal></goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>com.github.jsimone</groupId>
-                                    <artifactId>webapp-runner</artifactId>
-                                    <version>8.5.31.0</version>
-                                    <destFileName>savkin/target/savkin-1.0-SNAPSHOT.jar</destFileName>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>

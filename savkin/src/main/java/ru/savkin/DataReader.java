@@ -32,11 +32,10 @@ public class DataReader {
             IOException, BadLocationException,
             SAXException {
 
-
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory
                 .newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-        Document document = documentBuilder.parse(this.file);
+        Document document = documentBuilder.parse(this.getClass().getResourceAsStream("/text.xml"));
 
         return document;
     }
